@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    /* background-color: #e31b93b4; */
+    background: content-box radial-gradient(black,#ffc0f8,rgba(191, 42, 191, 0.892),darkblue);
+    background-color: antiquewhite;
+}
+.badacontainer{
+display: flex;
+}
+.leftcontainer{
+    margin: 20px;
+    width: 5vw;
+    /* background-color: rgb(224, 49, 151); */
+    background-color: rgba(224, 49, 151, 0.2); /* 0.5 for 50% opacity */
+    border-radius: 10px ;
+}
+.rightcontainer{
+    margin:20px;
+    width: 20vw;
+    background-color: rgb(24, 5, 101);
+    border-radius: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height:45px ;
+    background-color: black;
+    color: antiquewhite;
+}
+nav ul li{
+    padding: 0 6px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 6px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.centercontainer{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family:cursive;
+    display:flex;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-origin: border-box;
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 85px;
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.icons{
+    margin-bottom: 12px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressbar{
+    width: 45vw;
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin-top: 40px;
+}
+.songItem{
+    height:50px ;
+    width: 78%;
+    display:flex;
+    /* background-color: white; */
+    color: white;
+    margin:12px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.songItem img{
+   width: 50px;
+   margin: 0 18px;
+}
+.timestamp i{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    right: 10vw;
+    font-family:cursive;
+}
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in ;
+}
